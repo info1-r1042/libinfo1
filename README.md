@@ -1,2 +1,2 @@
-# libinfo1
-Biblioteca de Info1 para C
+# Biblioteca de Info1 para C
+WIP
