@@ -1,2 +1,2 @@
-# Biblioteca de Info1 para C
+# C library for Introduction to CS
 WIP
