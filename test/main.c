@@ -6,7 +6,7 @@
  */
 #include <stdio.h>
 
-#include "info1.h"
+#include <info1.h>
 
 int main(void) {
   string s = obtener_string("Ingrese un string: ");
