@@ -1,5 +1,5 @@
-# Brief:  Biblioteca del curso R1042 de Informática I
-# Author: Javier Balloffet <javier.balloffet@gmail.com>
+# Brief:  Biblioteca de info1 para C
+# Author: Javier Balloffet <jballoffet@frba.utn.edu.ar>
 # Date:   Apr 10, 2021
 
 ################################################################

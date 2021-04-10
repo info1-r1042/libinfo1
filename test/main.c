@@ -1,15 +1,14 @@
 /*!
  * @file   main.c
- * @brief  Biblioteca del curso R1042 de Informática I
+ * @brief  Biblioteca de info1 para C
  * @author Javier Balloffet <jballoffet@frba.utn.edu.ar>
- * @date   Apr 26, 2020
+ * @date   Apr 10, 2021
  */
 #include <stdio.h>
-
 #include <info1.h>
 
 int main(void) {
-  string s = obtener_string("Ingrese un string: ");
+  String s = obtener_string("Ingrese un string: ");
   printf("hola, %s\n", s);
   char c = obtener_char("Ingrese un char: ");
   printf("char ingresado: %c\n", c);

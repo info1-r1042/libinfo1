@@ -1,14 +1,14 @@
 /*!
  * @file   info1.h
- * @brief  Biblioteca del curso R1042 de Informática I
+ * @brief  Biblioteca de info1 para C
  * @author Javier Balloffet <jballoffet@frba.utn.edu.ar>
- * @date   Apr 26, 2020
+ * @date   Apr 10, 2021
  */
 #ifndef INFO1_H_
 #define INFO1_H_
 
 // Tipo propio de (puntero a) string.
-typedef char* string;
+typedef char* String;
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -19,7 +19,7 @@ typedef char* string;
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o CHAR_MAX en caso de error.
  */
-char obtener_char(const string mensaje);
+char obtener_char(const String mensaje);
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -30,7 +30,7 @@ char obtener_char(const string mensaje);
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o INT_MAX en caso de error.
  */
-int obtener_int(const string mensaje);
+int obtener_int(const String mensaje);
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -41,7 +41,7 @@ int obtener_int(const string mensaje);
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o LONG_MAX en caso de error.
  */
-long obtener_long(const string mensaje);
+long obtener_long(const String mensaje);
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -52,7 +52,7 @@ long obtener_long(const string mensaje);
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o FLT_MAX en caso de error.
  */
-float obtener_float(const string mensaje);
+float obtener_float(const String mensaje);
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -63,7 +63,7 @@ float obtener_float(const string mensaje);
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o DBL_MAX en caso de error.
  */
-double obtener_double(const string mensaje);
+double obtener_double(const String mensaje);
 
 /*!
  * @brief Solicita al usuario el ingreso de una línea de texto desde la entrada
@@ -75,6 +75,6 @@ double obtener_double(const string mensaje);
  * @param[in] mensaje Mensaje de solicitud de ingreso de datos.
  * @return    El valor obtenido desde stdin, o NULL en caso de error.
  */
-string obtener_string(const string mensaje);
+String obtener_string(const String mensaje);
 
 #endif // INFO1_H_

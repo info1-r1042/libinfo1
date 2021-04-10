@@ -1,8 +1,8 @@
 /*!
  * @file   info1.c
- * @brief  Biblioteca del curso R1042 de Informática I
+ * @brief  Biblioteca de info1 para C
  * @author Javier Balloffet <jballoffet@frba.utn.edu.ar>
- * @date   Apr 26, 2020
+ * @date   Apr 10, 2021
  */
 #include "info1.h"
 
@@ -17,7 +17,7 @@
 #define LARGO_MAX 100
 
 // Arreglo de string allocados por obtener_string.
-static string* strings = NULL;
+static String* strings = NULL;
 
 // Cantidad de strings allocados por obtener_string.
 static size_t strings_cant = 0;
@@ -47,11 +47,11 @@ static void teardown()
     }
 }
 
-string obtener_string(const string mensaje)
+String obtener_string(const String mensaje)
 {
-    string str = NULL;
-    string tmp = NULL;
-    string* str_tmp = NULL;
+    String str = NULL;
+    String tmp = NULL;
+    String* str_tmp = NULL;
     char ch = 0;
     int largo = 0;
 
@@ -94,7 +94,7 @@ string obtener_string(const string mensaje)
     str[largo - 1] = '\0';
 
     // Redimensiono el arreglo de almacenamiento de strings.
-    str_tmp = realloc(strings, sizeof(string) * (strings_cant + 1));
+    str_tmp = realloc(strings, sizeof(String) * (strings_cant + 1));
     if (str_tmp == NULL)
     {
         free(strings);
@@ -110,9 +110,9 @@ string obtener_string(const string mensaje)
     return str;
 }
 
-char obtener_char(const string mensaje)
+char obtener_char(const String mensaje)
 {
-    string linea;
+    String linea;
 
     // Solicito datos al usuario hasta que el valor ingresado sea válido.
     while (1)
@@ -132,9 +132,9 @@ char obtener_char(const string mensaje)
     }
 }
 
-int obtener_int(const string mensaje)
+int obtener_int(const String mensaje)
 {
-    string linea;
+    String linea;
     char* fin;
     long numero;
 
@@ -161,9 +161,9 @@ int obtener_int(const string mensaje)
     }
 }
 
-long obtener_long(const string mensaje)
+long obtener_long(const String mensaje)
 {
-    string linea;
+    String linea;
     char* fin;
     long numero;
 
@@ -190,9 +190,9 @@ long obtener_long(const string mensaje)
     }
 }
 
-float obtener_float(const string mensaje)
+float obtener_float(const String mensaje)
 {
-    string linea;
+    String linea;
     char* fin;
     float numero;
 
@@ -219,9 +219,9 @@ float obtener_float(const string mensaje)
     }
 }
 
-double obtener_double(const string mensaje)
+double obtener_double(const String mensaje)
 {
-    string linea;
+    String linea;
     char* fin;
     double numero;
 
